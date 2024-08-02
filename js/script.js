@@ -33,24 +33,27 @@ let list = '<ul>';
 -se divisibile per 3 e 5 stampo fizzbuzz
 */
 
-
 for (let i = 1; i <= 100; i++){
     
     if (i % 3 === 0 && i % 5 === 0){
-        list += `<li> ${i} FizzBuzz </li>`
+        list += `<li> FizzBuzz </li>`
         console.log('FizzBuzz');
+        //!fase output
         listNumbersElement.innerHTML = list;
     } else if (i % 3 === 0){
-        list += `<li> ${i} Fizz </li>`
+        list += `<li> Fizz </li>`
         console.log('Fizz');
+        //!fase output
         listNumbersElement.innerHTML = list;
     } else if (i % 5 === 0){
-        list += `<li> ${i} Buzz </li>`
+        list += `<li> Buzz </li>`
         console.log('Buzz');
+        //!fase output
         listNumbersElement.innerHTML = list;
     } else {
         list += `<li> ${i} </li>`
         console.log(i);
+        //!fase output
         listNumbersElement.innerHTML = list;
     }
 }
