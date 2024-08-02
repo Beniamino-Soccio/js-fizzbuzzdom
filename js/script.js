@@ -1,3 +1,4 @@
+console.log('JS OK');
 //SCALETTA TRACCIA
 // MILESTONE 1
 /*
@@ -17,3 +18,26 @@
 /* 
 -personalizzare la pagina con css
 */
+
+// fase ---
+
+//creo un ciclo che conti da 1 a 100 e stampo in consoleseguendo alcune regole:
+/*
+-se divisibile per 3 stampo fizz
+-se divisibile per 5 stampo buzz
+-se divisibile per 3 e 5 stampo fizzbuzz
+*/
+
+for (let i = 1; i <= 100; i++){
+    
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log('FizzBuzz')
+    } else if (i % 3 === 0){
+        console.log('fizz')
+    } else if (i % 5 === 0){
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
+    
+}
