@@ -10,17 +10,22 @@ console.log('JS OK');
 */
 //milestone 2
 /* 
--creiamomo un elemento contenitore nel DOM
+-creiamo un elemento contenitore nel DOM
 -recuperiamo l'elemento dal DOM
--stampiamo i numeri all'interno dell ' elemento nel DOM
+-stampiamo i numeri all'interno dell'elemento nel DOM
 */
 //milestone 3
 /* 
 -personalizzare la pagina con css
 */
 
-// fase ---
+// !fase di preparazione
+//prendo l'elemento contenitore dal DOM
+const listNumbersElement = document.getElementById('list-numbers');
 
+let list = '<ul>';
+
+// !fase di elaborazione
 //creo un ciclo che conti da 1 a 100 e stampo in consoleseguendo alcune regole:
 /*
 -se divisibile per 3 stampo fizz
@@ -28,16 +33,25 @@ console.log('JS OK');
 -se divisibile per 3 e 5 stampo fizzbuzz
 */
 
+
 for (let i = 1; i <= 100; i++){
     
     if (i % 3 === 0 && i % 5 === 0){
-        console.log('FizzBuzz')
+        list += `<li> ${i} FizzBuzz </li>`
+        console.log('FizzBuzz');
+        listNumbersElement.innerHTML = list;
     } else if (i % 3 === 0){
-        console.log('fizz')
+        list += `<li> ${i} Fizz </li>`
+        console.log('Fizz');
+        listNumbersElement.innerHTML = list;
     } else if (i % 5 === 0){
+        list += `<li> ${i} Buzz </li>`
         console.log('Buzz');
+        listNumbersElement.innerHTML = list;
     } else {
+        list += `<li> ${i} </li>`
         console.log(i);
+        listNumbersElement.innerHTML = list;
     }
-    
 }
+
