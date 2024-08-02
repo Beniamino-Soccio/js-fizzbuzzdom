@@ -14,9 +14,23 @@ body{
 
 ul{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 0 36px;
+}
+li{
+    text-align: center;
+    align-content: center;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 25px;
 }
 /* Utils */
 
 .container{
     margin: 0 auto;
+
 }
