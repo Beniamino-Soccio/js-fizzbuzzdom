@@ -36,22 +36,22 @@ let list = '<ul>';
 for (let i = 1; i <= 100; i++){
     
     if (i % 3 === 0 && i % 5 === 0){
-        list += `<li class="bg-success bg-gradient bg-opacity-75"> FizzBuzz </li>`
+        list += `<li class="bg-success bg-gradient bg-opacity-75 fs-6"> FizzBuzz </li>`
         console.log('FizzBuzz');
         //!fase output
         listNumbersElement.innerHTML = list;
     } else if (i % 3 === 0){
-        list += `<li class="bg-warning bg-gradient bg-opacity-75"> Fizz </li>`
+        list += `<li class="bg-warning bg-gradient bg-opacity-75 fs-5"> Fizz </li>`
         console.log('Fizz');
         //!fase output
         listNumbersElement.innerHTML = list;
     } else if (i % 5 === 0){
-        list += `<li class="bg-primary bg-gradient bg-opacity-75"> Buzz </li>`
+        list += `<li class="bg-primary bg-gradient bg-opacity-75 fs-5"> Buzz </li>`
         console.log('Buzz');
         //!fase output
         listNumbersElement.innerHTML = list;
     } else {
-        list += `<li class="bg-danger bg-gradient bg-opacity-75"> ${i} </li>`
+        list += `<li class="bg-danger bg-gradient bg-opacity-75 fs-5"> ${i} </li>`
         console.log(i);
         //!fase output
         listNumbersElement.innerHTML = list;
